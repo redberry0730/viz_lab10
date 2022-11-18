@@ -1,0 +1,25 @@
+body {
+    font-family: helvetica, arial, sans-serif;
+    margin: 2em;
+    font-weight: bold;
+    color: black;
+  }
+  
+  h1 {
+    font-style: italic;
+    font-size: 70px;
+    color: blueviolet;
+  }
+   
+  .column:first-child {
+    display:flex;
+  }
+
+  .column label {
+    padding-top:5px;
+  }
+
+  .column select {
+    width: 70%!important;
+    margin-left: 20px;
+  }

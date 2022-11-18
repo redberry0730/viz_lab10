@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Accessibility</title>
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <h1>Coffee House Chains</h1>
+    <p>
+      A ranking of selected leading coffee house chains worldwide
+    </p>
+    <div class="row">
+      <div class="column">
+        <label for="group-by">Group By</label>
+        <select id="group-by">
+          <option value="stores">Stores worldwide</option>
+				  <option value="revenue">Revenue in billion U.S. dollars</option>
+        </select>      
+      </div>
+      <div class="column">
+        <div id="sort-btn" class="button button-outline">
+          <i class="fas fa-sort"></i>SORT
+        </div>        
+      </div>
+    </div>
+    <div class="chart"></div>
+  </body>
+</html>
